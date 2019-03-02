@@ -1,10 +1,11 @@
 .entre-contato{
-    margin: 0px 0px;
+    margin: 30px -15px;
     padding: 0px;
-   
+
     &__form{
-        margin: 30px -15px;
+        margin: 0 auto;
         padding: 15px;
+        max-width: 900px;
         border: 1px solid $gray-border;
         border-radius: 10px;
 

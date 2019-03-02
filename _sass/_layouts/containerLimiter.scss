@@ -1,6 +1,7 @@
 .containerLimiter{
     margin: 0 auto;
     padding: 0px 15px;
+    position: relative;
 
     @media (min-width: $breakpoint-sm){
         width: 540px;

@@ -11,34 +11,37 @@
 <body>
 
     <header class="header">
-        <h1 class="logo">Panda Foundation</h1>
-        <button class="header__botao-menu">Menu do Botão</button>
-        <nav class="header__menu">
-            <ul class="header__menu__ul">
-                <li class="header__menu__ul__item"><a href="index.html">Home</a></li>
-                <li class="header__menu__ul__item"><a href="animais-resgatados.html">Animais Resgatados</a></li>
-                <li class="header__menu__ul__item"><a href="sobre-nos.html">Sobre Nós</a></li>
-                <li class="header__menu__ul__item header__menu__ul__item--selected"><a href="entre-contato.html">Entre em Contato</a></li>
-            </ul>
-        </nav>
+            <div class="containerLimiter">
+                <h1 class="logo">Panda Foundation</h1>
+                <button class="header__botao-menu">Menu do Botão</button>
+                <nav class="header__menu">
+                    <ul class="header__menu__ul">
+                        <li class="header__menu__ul__item"><a href="index.html">Home</a></li>
+                        <li class="header__menu__ul__item"><a href="animais-resgatados.html">Animais Resgatados</a></li>
+                        <li class="header__menu__ul__item"><a href="sobre-nos.html">Sobre Nós</a></li>
+                        <li class="header__menu__ul__item header__menu__ul__item--selected"><a href="entre-contato.html">Entre em Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
     </header>
 
     <main>
         <h1 class="title-header-bar title-header-bar--white title-header-bar--green-background">Entre em Contato</h1>
         
-        <section class="entre-contato">
-            
-            <p class="short-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias explicabo doloribus aut placeat blanditiis debitis qui? Corporis enim neque totam veniam aliquid eos nobis voluptatum praesentium. Possimus corporis aperiam minus?</p>
+        <div class="containerLimiter">
+            <section class="entre-contato">
+                
+                <p class="short-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias explicabo doloribus aut placeat blanditiis debitis qui? Corporis enim neque totam veniam aliquid eos nobis voluptatum praesentium. Possimus corporis aperiam minus?</p>
 
-            <form class="entre-contato__form"action="#">
-                <input class="entre-contato__form__input" id="form-nome" name="form-name" type="text" placeholder="* O seu Nome">
-                <input class="entre-contato__form__input" id="form-email" name="form-email" type="email" placeholder="* Um E-mail para Contato">
-                <textarea class="entre-contato__form__input entre-contato__form__input--text-area" id="form-mensagem" name="form-mensagem" placeholder="* A sua Mensagem para Nós"></textarea>
-                <input class="entre-contato__form__submit" type="submit" value="Enviar">
-            </form>
-        </section>
+                <form class="entre-contato__form"action="#">
+                    <input class="entre-contato__form__input" id="form-nome" name="form-name" type="text" placeholder="* O seu Nome">
+                    <input class="entre-contato__form__input" id="form-email" name="form-email" type="email" placeholder="* Um E-mail para Contato">
+                    <textarea class="entre-contato__form__input entre-contato__form__input--text-area" id="form-mensagem" name="form-mensagem" placeholder="* A sua Mensagem para Nós"></textarea>
+                    <input class="entre-contato__form__submit" type="submit" value="Enviar">
+                </form>
+            </section>
+        </div>
  
-    
     </main>
 
     <footer class="footer">
