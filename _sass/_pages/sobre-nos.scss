@@ -12,6 +12,8 @@
 
             margin: 0px 0px 60px 0px;
             padding: 0px;
+            overflow: auto;
+            text-align: center;
 
             list-style: none;
 
@@ -25,6 +27,7 @@
                     font-size: 22px;
                     padding-left: 5px;
                     border-left: 3px solid $main-color;
+                    text-align: left;
                 }
 
                 &__underline{
@@ -44,11 +47,13 @@
                 }
             }
 
-            &__img-container{
+            &__img-container, &__img-container--picture{
                 margin: 0 auto;
                 margin-top: 30px;
                 padding: 10px;
                 box-shadow: 1px 1px 5px 0px rgba($black-real, 0.4);
+                max-width: 450px;
+                max-width: 450px;
 
                 &__description{
                     margin: 5px 0px 0px 0px;
@@ -74,6 +79,21 @@
 
                 max-width: 500px;
                 max-height: 400px;
+            }
+
+            @media (min-width: $breakpoint-xl){
+                &__img-container{
+                    float: left;
+                    width: 32%;
+                    margin: 5px;
+                }
+
+                &__img-container--picture{
+                    float: none;
+                    margin: 5px;
+                    width: 50%;
+                    display: inline-block;
+                }
             }
         }
     }

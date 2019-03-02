@@ -745,6 +745,8 @@ main {
     .about-us-topic__ul__item {
       margin: 0px 0px 60px 0px;
       padding: 0px;
+      overflow: auto;
+      text-align: center;
       list-style: none; }
       .about-us-topic__ul__item__title {
         margin: 0px;
@@ -754,7 +756,8 @@ main {
           margin-bottom: 19px;
           font-size: 22px;
           padding-left: 5px;
-          border-left: 3px solid #81c784; }
+          border-left: 3px solid #81c784;
+          text-align: left; }
         .about-us-topic__ul__item__title__underline {
           content: "";
           display: block;
@@ -765,18 +768,20 @@ main {
           transition: width 500ms ease; }
         .about-us-topic__ul__item__title:hover .about-us-topic__ul__item__title__underline {
           width: 100%; }
-      .about-us-topic__ul__item__img-container {
+      .about-us-topic__ul__item__img-container, .about-us-topic__ul__item__img-container--picture {
         margin: 0 auto;
         margin-top: 30px;
         padding: 10px;
-        box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4); }
-        .about-us-topic__ul__item__img-container__description {
+        box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4);
+        max-width: 450px;
+        max-width: 450px; }
+        .about-us-topic__ul__item__img-container__description, .about-us-topic__ul__item__img-container--picture__description {
           margin: 5px 0px 0px 0px;
           padding: 0px;
           font-size: 18px;
           font-weight: 500;
           text-align: right; }
-          .about-us-topic__ul__item__img-container__description--center {
+          .about-us-topic__ul__item__img-container__description--center, .about-us-topic__ul__item__img-container--picture__description--center {
             text-align: center; }
       .about-us-topic__ul__item__img {
         margin: 0px;
@@ -787,3 +792,13 @@ main {
         min-height: 200px;
         max-width: 500px;
         max-height: 400px; }
+      @media (min-width: 1120px) {
+        .about-us-topic__ul__item__img-container {
+          float: left;
+          width: 32%;
+          margin: 5px; }
+        .about-us-topic__ul__item__img-container--picture {
+          float: none;
+          margin: 5px;
+          width: 50%;
+          display: inline-block; } }
