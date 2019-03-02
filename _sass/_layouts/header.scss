@@ -1,0 +1,54 @@
+.header{
+    background-color: $main-color;
+    margin-right: -15px;
+    margin-left: -15px;
+    height: 67px;
+    box-shadow: -1px 1px 1px rgba($black-real,0.4);
+
+    &__menu{
+        margin-left: -15px;
+        
+        &__ul{
+            list-style: none;
+            margin: 0px; 
+            margin-top: 20px;
+            padding: 0px;
+
+            &__item{
+                a{
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+
+                line-height: 30px;
+            }
+
+            &__item--selected{
+                a{
+                    color: $main-color;
+                }
+            }
+        }
+    }
+
+    &__botao-menu{
+        position: absolute;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        text-indent: -9999px;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-right: 5px;
+        background-image: url(../_img/_useful/menu-icon.png);
+        background-repeat: no-repeat;
+        background-position: 6px 7px;
+        background-color: $white-real;
+        border: 2px solid $gray-border;
+    }
+
+    .logo{
+        margin-top: 10px;
+    }
+}

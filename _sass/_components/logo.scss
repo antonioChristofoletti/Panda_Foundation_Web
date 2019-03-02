@@ -1,0 +1,19 @@
+.logo{
+    color: $white-real;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 15px;
+    border: 2px solid $white-real;
+    padding: 5px;
+    display: inline-block;
+
+    &::after{
+        content: "";
+        width: 203px;
+        height: 3px;
+        display: block;
+        background-color: $white-real;
+    }
+}

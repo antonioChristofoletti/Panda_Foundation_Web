@@ -1,0 +1,24 @@
+//Abstracts
+@import "_abstracts/breakpoints.scss";
+@import "_abstracts/colors.scss";
+
+//Base
+@import "_base/fonts.scss";
+@import "_base/normalize.scss";
+@import "_base/reset.scss";
+
+//Componentes
+@import "_components/logo.scss";
+@import "_components/short-paragraph.scss";
+@import "_components/title-header-bar.scss";
+@import "_components/containerLimiter.scss";
+
+//Layout
+@import "_layouts/footer.scss";
+@import "_layouts/header.scss";
+
+//Pages
+@import "_pages/animais-resgatados.scss";
+@import "_pages/entre-contato.scss";
+@import "_pages/index.scss";
+@import "_pages/sobre-nos.scss";

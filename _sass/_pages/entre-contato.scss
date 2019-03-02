@@ -1,0 +1,42 @@
+.entre-contato{
+    margin: 0px 0px;
+    padding: 0px;
+   
+    &__form{
+        margin: 30px -15px;
+        padding: 15px;
+        border: 1px solid $gray-border;
+        border-radius: 10px;
+
+        &__input{
+            padding: 0px 10px;
+            display: block;
+            width: 100%;
+            height: 38px;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border: 1px solid $main-color;
+
+            &--text-area{
+                height: 170px;
+            }
+        }
+
+        &__submit{
+            background-color: $white-real;
+            color: $main-color;
+            display: block;
+            margin: 0 auto;
+            padding: 6px 0px;
+            width: 120px;
+            border: 2px solid $main-color;
+            border-radius: 34px;
+            cursor: pointer;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}

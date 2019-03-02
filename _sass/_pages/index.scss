@@ -1,0 +1,196 @@
+.header-home{
+    background-image: url(../_img/_index/main-image-sm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: -30px;
+    margin-left: -30px;
+    min-width: 444px;
+    min-height: 285px;
+
+    &__text{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 0px;
+        font-weight: bold;
+
+        &__title{
+            font-size: 30px;
+            padding-top: 10px;
+            color: $white-real;
+        }
+
+        &__subtitle{
+            font-size: 16px;
+            margin: -20px 0px 10px 0px;
+            color: $white-real;
+
+            &::after{
+                content: "";
+                display: block;
+                margin: 0 auto;
+                width: 200px;
+                height: 2px;
+                background-color: $white-real;
+            }
+        }
+    }
+
+    @media (min-width: $breakpoint-sm){
+        background-image: url("../_img/_index/main-image-nm.png");
+        min-width: 540px;
+        min-height: 371px;
+    }
+
+    @media (min-width: $breakpoint-nm){
+        background-image: url("../_img/_index/main-image-nm.png");
+        min-width: 720px;
+        min-height: 400px;
+    }
+
+    @media (min-width: $breakpoint-lg){
+        background-image: url("../_img/_index/main-image-lg.png");
+        min-width: 960px;
+        min-height: 500px;
+
+        &__text{
+            &__title{
+                padding-top: 60px;
+                font-size: 40px;
+            }
+
+            &__subtitle{
+                font-size: 20px;
+            }
+        }
+    }
+
+    @media (min-width: $breakpoint-xl){
+        background-attachment: fixed;
+        background-image: url("../_img/_index/main-image-lg.png");
+        min-width: 1000px;
+        min-height: 615px;
+
+        &__text{
+            &__title{
+                padding-top: 260px;
+            }
+        }
+    }
+}
+
+.our-works{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+
+    &-item{
+        margin: 40px 0px; 
+
+        &__image{
+            width: 240px;
+            height: 240px;
+            padding: 0px;
+            margin: 0px;
+            border-radius: 50%;
+            border: 2px solid $gray-border;
+        }
+
+        &__title{
+            color: $gray-title ;
+            font-size: 20px;
+        }
+
+        &__subtitle{
+            color: $gray-reader;
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        @media (min-width: $breakpoint-nm){
+            float: left;
+            width: 33.333%;
+            padding: 0px 0px;
+            margin: 0 auto;
+
+            &__image{
+                width: 220px;
+                height: 220px;
+            }
+
+            &__subtitle{
+                padding: 0px 45px;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: $breakpoint-lg){
+            &__image{
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+}
+
+.animals-saved{
+    margin-right: -30px;
+    margin-left: -30px;
+    padding: 20px 0px 70px 0px;
+    background-color: $main-color;
+    height: 100%;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+
+    &__title{
+        color: $white-real;
+        font-size: 25px;
+    }
+
+    &__item{
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        &__icon{
+            width: 130px;
+            height: 130px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: $main-color;
+        }
+    
+        &__description{
+            margin: 0 auto;
+            font-size: 18px;
+            color: $white-real;
+        }
+
+        @media (min-width: $breakpoint-nm){
+            float: left;
+            width: 33.333%;
+            padding: 0px 0px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.help-us{
+    padding: 60px 0px;
+    text-align: center;
+
+    &__button{
+        border: 2px solid $main-color;
+        padding: 15px;
+        background-color: $white-real;
+
+        &__link{
+            text-decoration: none;
+            font-size: 17px;
+            color: $main-color;
+
+            font-weight: bold;
+        }
+    }
+}

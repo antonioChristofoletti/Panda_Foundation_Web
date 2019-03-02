@@ -1,0 +1,9 @@
+.short-paragraph{
+    margin: 30px 10px;
+    line-height: 26px;
+    text-align: justify;
+
+    &--center{
+        text-align: center;
+    }
+}
