@@ -1,19 +1,20 @@
 .header{
     background-color: $main-color;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin: 0px -15px 140px -15px;
     height: 67px;
     box-shadow: -1px 1px 1px rgba($black-real,0.4);
 
     &__menu{
         margin-left: -15px;
         position: absolute;
+        overflow: hidden;
         
         &__ul{
             list-style: none;
             margin: 0px; 
             margin-top: 20px;
             padding: 0px;
+            overflow: hidden;
 
             &__item{
                 a{
@@ -22,11 +23,68 @@
                 }
 
                 line-height: 30px;
+                transition: all 250ms ease-in;
             }
+            
 
             &__item--selected{
                 a{
                     color: $main-color;
+                }
+            }
+        }
+
+        &__ul--closed{
+            list-style: none;
+            margin: 0px; 
+            padding: 0px;
+            overflow: hidden;
+
+            &__item{
+                line-height: 0px;
+            }
+        }
+    }
+
+    @media (min-width: $breakpoint-nm){
+        
+        &__menu{
+            float: right;
+            position: relative;
+
+            &__ul{
+                margin-top: 26px;
+                &__item{
+                    display: inline-block;
+                    margin: 0px;
+                    margin-right: 5px;
+                    padding: 0px;
+
+                    a{
+                        margin: 0px;
+                        padding: 0px;
+                    }
+                }
+
+                &__item--selected{
+                    a{
+                        color: $white-real;
+                    }
+                }
+            }
+        }
+
+        .header__botao-menu{
+            display: none;
+        }
+        
+    }
+
+    @media(min-width: $breakpoint-lg){
+        &__menu{
+            &__ul{
+                &__item{
+                    margin-right: 15px;
                 }
             }
         }
@@ -51,5 +109,14 @@
 
     .logo{
         margin-top: 10px;
+    }
+}
+
+.header--menu-closed{
+
+    margin-bottom: 40px;
+
+    .header__menu__ul__item{
+        line-height: 0px;
     }
 }

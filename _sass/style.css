@@ -319,9 +319,6 @@ template {
   box-sizing: border-box;
   color: #3a3a3a; }
 
-main {
-  margin-top: 140px; }
-
 .logo {
   color: #fff;
   font-weight: bold;
@@ -457,25 +454,55 @@ main {
 
 .header {
   background-color: #81c784;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin: 0px -15px 140px -15px;
   height: 67px;
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4); }
   .header__menu {
     margin-left: -15px;
-    position: absolute; }
+    position: absolute;
+    overflow: hidden; }
     .header__menu__ul {
       list-style: none;
       margin: 0px;
       margin-top: 20px;
-      padding: 0px; }
+      padding: 0px;
+      overflow: hidden; }
       .header__menu__ul__item {
-        line-height: 30px; }
+        line-height: 30px;
+        transition: all 250ms ease-in; }
         .header__menu__ul__item a {
           text-decoration: none;
           font-weight: bold; }
       .header__menu__ul__item--selected a {
         color: #81c784; }
+    .header__menu__ul--closed {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+      overflow: hidden; }
+      .header__menu__ul--closed__item {
+        line-height: 0px; }
+  @media (min-width: 768px) {
+    .header__menu {
+      float: right;
+      position: relative; }
+      .header__menu__ul {
+        margin-top: 26px; }
+        .header__menu__ul__item {
+          display: inline-block;
+          margin: 0px;
+          margin-right: 5px;
+          padding: 0px; }
+          .header__menu__ul__item a {
+            margin: 0px;
+            padding: 0px; }
+        .header__menu__ul__item--selected a {
+          color: #fff; }
+    .header .header__botao-menu {
+      display: none; } }
+  @media (min-width: 992px) {
+    .header__menu__ul__item {
+      margin-right: 15px; } }
   .header__botao-menu {
     position: absolute;
     right: 15px;
@@ -493,6 +520,11 @@ main {
     border: 2px solid #A9A9A9; }
   .header .logo {
     margin-top: 10px; }
+
+.header--menu-closed {
+  margin-bottom: 40px; }
+  .header--menu-closed .header__menu__ul__item {
+    line-height: 0px; }
 
 .containerLimiter {
   margin: 0 auto;
@@ -568,7 +600,7 @@ main {
   .entre-contato__form {
     margin: 0 auto;
     padding: 15px;
-    max-width: 900px;
+    max-width: 700px;
     border: 1px solid #A9A9A9;
     border-radius: 10px; }
     .entre-contato__form__input {
@@ -794,6 +826,11 @@ main {
         min-height: 150px;
         max-width: 500px;
         max-height: 400px; }
+      @media (min-width: 576px) {
+        .about-us-topic__ul__item__img-container {
+          margin: 0 auto;
+          margin-top: 5px;
+          margin-bottom: 30px; } }
       @media (min-width: 1120px) {
         .about-us-topic__ul__item__img-container {
           float: left;
