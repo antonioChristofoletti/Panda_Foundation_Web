@@ -515,7 +515,7 @@ template {
     margin-right: 5px;
     background-image: url(../_img/_useful/menu-icon.png);
     background-repeat: no-repeat;
-    background-position: 6px 7px;
+    background-position: -47px 8px;
     background-color: #fff;
     border: 2px solid #A9A9A9; }
   .header .logo {
@@ -525,6 +525,8 @@ template {
   margin-bottom: 40px; }
   .header--menu-closed .header__menu__ul__item {
     line-height: 0px; }
+  .header--menu-closed .header__botao-menu {
+    background-position: 6px 7px; }
 
 .containerLimiter {
   margin: 0 auto;
