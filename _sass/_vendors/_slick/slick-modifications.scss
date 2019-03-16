@@ -1,0 +1,25 @@
+//Modifica a cor do dots do SLICK JS - SEM SER SELECIONADO
+.slick-dots li button:before {
+    color: $main-color;
+}
+
+//Modifica a cor do dots do SLICK JS - SELECIONADO
+.slick-dots li.slick-active button:before {
+    color: $main-color !important;
+}
+
+//Modifica o estilo da borda do SLICK JS
+.slick-list{
+    border-radius: 3px !important;
+    border: 1px solid rgba($main-color, 0.7) !important;
+}
+
+//Modifica a cor da ARROW DA ESQUERDA
+.slick-prev:before {
+    color: $main-color;
+}
+
+//Modifica a cor da ARROW DA DIREITA
+.slick-next:before {
+    color: $main-color;
+}
