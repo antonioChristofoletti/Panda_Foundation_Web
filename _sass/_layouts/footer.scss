@@ -71,7 +71,7 @@
                     color: $white-material-design;
                     margin: 0 auto;
                     padding: 0px;
-                    margin-right: -40px;
+                    margin-right: 5px;
 
                     a{
                         margin-left: 0px;
@@ -105,18 +105,42 @@
     }
 
     @media (min-width: $breakpoint-nm){
-        .footer__item{
+        &__item{
             float: left;
             width: 33.333%;
             padding: 0 auto;
             margin: 0 auto;
+
+            &__link{                
+                &__ul{
+                    &__item{
+                        a{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
         }
 
-        .footer__item--black{
+        &__item--black{
             float: none;
             width: 100%;
             padding: 10px 0px;
             top: 90%;
+        }
+    }
+
+    @media (min-width: $breakpoint-lg){
+        &__item{
+            &__link{                
+                &__ul{
+                    &__item{
+                        a{
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

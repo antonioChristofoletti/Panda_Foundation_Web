@@ -11,6 +11,22 @@ $(document).ready(function () {
         dots: true,
         autoplay: true
     });
+
+    //Configurar o Formulário
+    $(".entre-contato__form").validate({
+        rules:{
+            "form-nome":{
+                required: true
+            }
+        },
+        messages:{
+            "form-nome":{
+                required: "O nome é obrigatório"
+            }
+        }
+    });
+
+
 }); 
 
 // INTERACAO DO MENU COM JAVA SCRIPT PURO

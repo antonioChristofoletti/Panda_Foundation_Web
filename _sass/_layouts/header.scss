@@ -5,7 +5,7 @@
     box-shadow: -1px 1px 1px rgba($black-real,0.4);
 
     &__menu{
-        margin-left: -15px;
+        margin-left: 16px;
         position: absolute;
         overflow: hidden;
         
@@ -20,6 +20,7 @@
                 a{
                     text-decoration: none;
                     font-weight: bold;
+                    color: $gray-reader;
                 }
 
                 line-height: 30px;
@@ -51,11 +52,13 @@
         &__menu{
             float: right;
             position: relative;
+            margin-top: -32px;
 
             &__ul{
-                margin-top: 26px;
+                display: inline;
+
                 &__item{
-                    display: inline-block;
+                    display: inline;
                     margin: 0px;
                     margin-right: 5px;
                     padding: 0px;
@@ -82,6 +85,7 @@
 
     @media(min-width: $breakpoint-lg){
         &__menu{
+            margin-top: 24px;
             &__ul{
                 &__item{
                     margin-right: 15px;
