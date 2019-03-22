@@ -15,17 +15,35 @@ $(document).ready(function () {
     //Configurar o Formulário
     $(".entre-contato__form").validate({
         rules:{
-            "form-nome":{
+            "form-name":{
                 required: true
+            },
+
+            "form-email":{
+                required: true
+            },
+
+            "form-mensagem":{
+                required: true,
+                minlength: 10
             }
         },
         messages:{
-            "form-nome":{
-                required: "O nome é obrigatório"
+            "form-name":{
+                required: "O nome é obrigatório."
+            },
+
+            "form-email":{
+                required: "O e-mail é obrigatório.",
+                email: "O e-mail informado é inválido."
+            },
+
+            "form-mensagem":{
+                required: "A mensagem é obrigatória.",
+                minlength: "Necessário ao menos 10 caracteres para a mensagem."
             }
         }
     });
-
 
 }); 
 
