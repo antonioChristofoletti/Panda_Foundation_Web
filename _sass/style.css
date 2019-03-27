@@ -325,6 +325,7 @@ body {
   color: #fff;
   font-weight: bold;
   font-size: 25px;
+  text-decoration: none;
   margin: 0px;
   padding: 0px;
   margin-left: 15px;
@@ -346,8 +347,6 @@ body {
     text-align: center; }
 
 .title-header-bar {
-  margin-left: -30px;
-  margin-right: -30px;
   text-align: center;
   padding: 30px 0px;
   color: #81c784;
@@ -370,7 +369,6 @@ body {
 .footer {
   background-color: #212121;
   position: relative;
-  margin: 0px -15px;
   padding: 20px 0px;
   overflow: hidden; }
   .footer__item {
@@ -461,9 +459,9 @@ body {
 
 .header {
   background-color: #81c784;
-  margin: 0px -15px 140px -15px;
   height: 67px;
-  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4); }
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
+  margin-bottom: 130px; }
   .header__menu {
     margin-left: 16px;
     position: absolute;
@@ -491,24 +489,26 @@ body {
       .header__menu__ul--closed__item {
         line-height: 0px; }
   @media (min-width: 768px) {
-    .header__menu {
-      float: right;
-      position: relative;
-      margin-top: -32px; }
-      .header__menu__ul {
-        display: inline; }
-        .header__menu__ul__item {
-          display: inline;
-          margin: 0px;
-          margin-right: 5px;
-          padding: 0px; }
-          .header__menu__ul__item a {
+    .header {
+      margin-bottom: 0px; }
+      .header__menu {
+        float: right;
+        position: relative;
+        margin-top: -32px; }
+        .header__menu__ul {
+          display: inline; }
+          .header__menu__ul__item {
+            display: inline;
             margin: 0px;
+            margin-right: 5px;
             padding: 0px; }
-        .header__menu__ul__item--selected a {
-          color: #fff; }
-    .header .header__botao-menu {
-      display: none; } }
+            .header__menu__ul__item a {
+              margin: 0px;
+              padding: 0px; }
+          .header__menu__ul__item--selected a {
+            color: #fff; }
+      .header .header__botao-menu {
+        display: none; } }
   @media (min-width: 992px) {
     .header__menu {
       margin-top: 24px; }
@@ -619,6 +619,20 @@ body {
     max-width: 700px;
     border: 1px solid #A9A9A9;
     border-radius: 10px; }
+    .entre-contato__form__error {
+      background-color: #ef5350;
+      padding: 10px;
+      margin-bottom: 20px;
+      color: #fff;
+      border-radius: 5px;
+      text-align: center; }
+    .entre-contato__form__sucess {
+      background-color: #66bb6a;
+      padding: 10px;
+      margin-bottom: 20px;
+      color: #fff;
+      border-radius: 5px;
+      text-align: center; }
     .entre-contato__form__input {
       padding: 0px 10px;
       display: block;
@@ -880,7 +894,7 @@ body {
         .about-us-topic__ul__item__img-container__description, .about-us-topic__ul__item__img-container--picture__description {
           margin: 5px 0px 0px 0px;
           padding: 0px;
-          font-size: 18px;
+          font-size: 17px;
           font-weight: 500;
           text-align: right; }
           .about-us-topic__ul__item__img-container__description--center, .about-us-topic__ul__item__img-container--picture__description--center {

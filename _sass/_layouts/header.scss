@@ -1,8 +1,8 @@
 .header{
     background-color: $main-color;
-    margin: 0px -15px 140px -15px;
     height: 67px;
     box-shadow: -1px 1px 1px rgba($black-real,0.4);
+    margin-bottom: 130px;
 
     &__menu{
         margin-left: 16px;
@@ -48,6 +48,8 @@
     }
 
     @media (min-width: $breakpoint-nm){
+
+        margin-bottom: 0px;
         
         &__menu{
             float: right;

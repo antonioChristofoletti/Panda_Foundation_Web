@@ -9,6 +9,24 @@
         border: 1px solid $gray-border;
         border-radius: 10px;
 
+        &__error{
+            background-color: $red-material-design400;
+            padding: 10px;
+            margin-bottom: 20px;
+            color: $white-real;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        &__sucess{
+            background-color: $dark-green-material-design400;
+            padding: 10px;
+            margin-bottom: 20px;
+            color: $white-real;
+            border-radius: 5px;
+            text-align: center;
+        }
+
         &__input{
             padding: 0px 10px;
             display: block;
