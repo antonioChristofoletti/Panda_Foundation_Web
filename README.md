@@ -8,6 +8,10 @@ My goals with it is improve my skills and traine some important point about web 
 
 ## Images
 
+## Used Technologies
+
+## Features
+
 ## Status
 
 Concluded. There is no indicates for futures developments.
