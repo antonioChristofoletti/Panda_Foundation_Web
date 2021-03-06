@@ -6,13 +6,16 @@ This is a simple project that I created to practice some web concepts.
 
 My goals with it is improve my skills and traine some important point about web development.
 
-## Images
-
 ## Used Technologies
+
+- HTML;
+- CSS, SASS;
+- Javascript;
+- PHP.
 
 ## Setup
 
-## Features
+- Just is necessary set up in a WAMP or any other server.
 
 ## Status
 
