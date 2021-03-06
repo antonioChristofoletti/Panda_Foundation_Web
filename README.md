@@ -4,7 +4,7 @@ This is a simple project that I created to practice some web concepts.
 
 ## Purpose
 
-My goals with it is improve my skills and traine some important point about web development.
+My goals with this project, It is improve my skills and traine some important point about web development.
 
 ## Used Technologies
 
@@ -15,7 +15,7 @@ My goals with it is improve my skills and traine some important point about web 
 
 ## Setup
 
-- Just is necessary set up in a WAMP or any other server.
+Just is necessary set up in a WAMP or any other server.
 
 ## Status
 
