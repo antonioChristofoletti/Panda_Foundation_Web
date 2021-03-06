@@ -10,6 +10,8 @@ My goals with it is improve my skills and traine some important point about web 
 
 ## Used Technologies
 
+## Setup
+
 ## Features
 
 ## Status
